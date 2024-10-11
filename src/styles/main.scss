@@ -1,0 +1,65 @@
+/*
+    Area de inclusão de demais paginas .scss
+*/
+@use 'hero';
+@use 'content';
+@use 'var';
+@use 'resp';
+@use 'footer';
+@use 'dialog';
+
+/*
+    Criação das fontes para a pagina 
+*/
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/Roboto-Black.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+    Reset da pagina 
+*/
+*:not(dialog) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    background-color: var.$corPagina;
+    color: var.$corTexto;
+}
+
+/*
+    Criação das clases reutilizaveis 
+*/
+.container {
+    max-width: 90VW;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 640px) {
+        max-width: 80%;
+    }
+    @media (max-width: 1024px){
+        max-width: 90%;
+    }
+}
+
+.open-modal {
+    border: none;
+    background-color: var.$corPagina;
+    cursor: pointer;
+    padding: 10px;
+    max-width: 100%;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+@use 'var';
+
+.footer {
+    background-color: var.$corBege;
+    border-radius: 15px;
+    margin: 5px;
+    margin-top: 45px;
+    .container {
+        background-color: transparent;
+    }
+    &__github {
+        background-color: transparent;
+        &__title {
+            background-color: transparent;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-align: center;
+            padding-top: 15px;
+
+        }
+        &__icon {
+            background-color: transparent;
+            width: 50px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+

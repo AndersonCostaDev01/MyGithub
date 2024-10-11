@@ -1,0 +1,54 @@
+.modal {
+    background-color: transparent;
+    button {
+        svg {
+            background-color: transparent;
+        }
+    }
+
+    h2 {
+        background-color: transparent;
+    }
+
+    &__contact {
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        label {
+            background-color: transparent;
+        }
+        &__input, button {
+            border: none;
+            background-color: #e0dba48c;
+            border-radius: 15px;
+            padding: 5px;
+        }
+        textarea {
+            width: 500px;
+            height: 100px;
+            max-width: 100%;
+        }
+    }
+
+    &__header {
+        margin: 5px;
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dialog {
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(224, 219, 164, 0.8);
+}
+
+button {
+    cursor: pointer;
+}

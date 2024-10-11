@@ -1,0 +1,47 @@
+@use 'var';
+
+.hero {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    
+    &__icons {
+        display: flex; /* Troca de block para flex */
+        justify-content: center;
+        align-items: center; /* Alinha os itens verticalmente */
+        svg {
+            width: 120px;
+            height: auto;
+        }
+    }
+    
+    &__text {
+        display: block;
+        padding: 20px;
+        color: var.$corTexto;
+
+        p {
+            padding-top: 15px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        span {
+            font-size: 50px;
+        }
+    }
+
+    @media (max-width: 460px) {
+       display: block; 
+
+       &__icon {
+        svg {
+            width: 60px;
+        }
+       }
+    }
+}
+
+

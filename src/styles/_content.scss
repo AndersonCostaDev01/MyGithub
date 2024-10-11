@@ -1,0 +1,33 @@
+@use 'var';
+
+.content {
+    padding: 60px 20px 0 20px;
+
+    &__search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        input {
+            border: none;
+            border-radius: 15px;
+            background-color: var.$corBege;
+            width: 250px;
+            height: 30px;
+            text-align: center;
+            padding: 5px 0;
+
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+
+            svg {
+                width: 30px;
+                height: auto;
+            }
+        }
+    }
+}
